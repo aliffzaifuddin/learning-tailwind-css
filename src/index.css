@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* To add custom styles for CSS using className or HTML tag*/
+@layer base {
+  html {
+    color: red
+  }
+  h1 {
+    @apply mb-2;
+  }
+}
