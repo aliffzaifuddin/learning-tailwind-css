@@ -4,10 +4,39 @@
 
 /* To add custom styles for CSS using className or HTML tag*/
 @layer base {
-  html {
-    color: red
+   h1 {
+    @apply mb-2 text-3xl font-bold;
   }
-  h1 {
-    @apply mb-2;
+
+  p {
+    @apply mb-2 text-xl font-semibold;
+  }
+
+  a {
+    @apply hover:underline visited:text-blue-600;
+  }
+
+  input, select {
+    @apply text-slate-500 p-1 mb-1 border border-slate-300 rounded outline-none;
+  }
+
+  input [type="checkbox"] {
+    @apply p-2 accent-pink-500 mr-2 mb-1 mt-0.5;
+  }
+  
+  label {
+    @apply text-sm ml-2 text-slate-700 font-medium leading-4;
+  }
+
+  .btn {
+    @apply px-4 py-2 mb-2 rounded-lg hover:transition hover:opacity-80;
+  }
+
+  .btn-primary {
+    @apply bg-blue-400 text-white;
+  }
+
+  .checkbox {
+    @apply m-2;
   }
 }
